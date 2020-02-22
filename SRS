@@ -1,0 +1,113 @@
+2 Overall Description 
+
+
+2.1  User Classes and Characteristics
+
+In our system the control will be in hand of three users. They are:
+
+1.Admin(club president)
+2.Website User
+3.Developer
+
+Admin: Admin has full access to the system. He/She has right to update or change any kind of information in database of his/her club, and also he/she can make event,recruitment and other post by using admin dashboard
+
+Website User: User can see all post admin made,and can share the post in social media.
+
+Developer: Developer has the right to developing the system. He/She can change/update any feature over the time
+
+Our system will be worked as a platform of all the student of NSU who has somehow involved with club activities and also who don’t
+
+Our target user:
+
+1.Admin
+2.Club member
+3.General Student(Student of NSU who are not involve with club activities but interested to attend club seminar/event)
+
+Admin: Admin will get benefit from our system. He/She can post the information of club,send email to the specific member of his/her club,also admin can promote his/her club through our system by posting event/seminar information. Admin can recruit new member by using our system
+
+Club member:Club member can see the club related post and the can share the post on their social media
+
+General member: General member can see seminar/event post and can booked seminar/event seat 
+
+2.2 User Needs
+
+Admin:
+Normally Club president has to monitor his club activities manually by arranging meeting every week and can’t reach so many people outside the club but by using
+our system admin(Club president) can reach more people and don’t have to arrange a meeting every week. He can easily monitor club activities
+
+
+
+Club Member:
+In every seminar or program, club members have to promote their event by giving leaflet. They recruit new member by sitting front of their club but by using our system club member doesn’t have to physically attend to recruitment program and other club promotion program
+
+
+
+General Student:
+General Student can easily join any club by using this system. They can booked a seat for any event and seminar
+
+
+2.3 Operating Environment
+
+programming language for our system and python is supported in all operating Our product is a website so it can run any operating system. For our database system we will use mysql/mongo db or sqlite database system. We will use python environment
+
+2.4  Constraints
+
+• User must be 18+ years old
+• Budget and time restrictions.
+• Resource limitations.
+
+2.5 Assumptions
+1. User knows English
+2. User have internet services
+3. User’s device support internet service
+4.User can use internet browser
+5. User at least has one device (Computer or Smart Phone)
+
+
+2.6 Requirements
+
+1.Functional Requirement
+2.Non-functional Requirement
+
+
+3 Requirements
+There will two types of requirements in our project and they are:
+1.	Functional requirements.
+2.	Non-Functionals requirements.
+3.1 Functional Requirements
+System features:
+Features of admin:
+•	Event post 
+Admin can post any kind of information about events, recruitment, Seminar and other information through our system.
+•	Club member recruitment
+General student can apply for a club by filling a question form. Admin can recruit new member from the applied students after taking a face-to-face viva.
+•	New member add to database
+Admin can automatically add the new recruited member into the database and he can also remove member from the club.
+
+Features of general student:
+•	Online registration into the system
+User should register him/herself into the system with name, email, id no. and password.
+•	Club member communication
+Members of the club can communicate with each other using a group chat box.
+•	Event post share 
+Club member can see and share the posts about club activities posted by club admin.
+•	Seat reservation for seminar
+Club member can reserve a seat for a upcoming seminar through our system.
+
+External Interface Requirements:
+• Use Interface:
+Front-end software:
+Back-end software: 
+• Hardware Interface:
+Windows.
+
+3.2 Non-Functional Requirements
+•	Performance
+ The product will be based on web and has to be run from a web server. The product will take initial load time depending on internet connection strength which also depends on the media from which the product is running. The performance will depend upon hardware components of the client/user. But we will try to provide better interactivity to the user which will need less time to load data and interact with the system. So, ultimately user experience will be smoother.
+•	Safety: 
+There will be a backup log so that damage or crush data can be recovered by using backup log.
+•	Security
+The customer’s web browser shall never display a user’s password.
+•	Quality Availability: The Club Management System will store the user information and give their club related different posts.
+ Maintainability: The administrators maintain the server for the better services.
+Usability: It satisfies a maximum number of user needs.
