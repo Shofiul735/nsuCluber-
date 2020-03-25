@@ -1,0 +1,11 @@
+.logo{
+  height: 40px;
+  width: 125px;
+}
+.nav-hover{
+  transition: all .7s ease-in-out;
+}
+.nav-hover{
+  border-radius: 1px solid #f8f9fa;
+  color:#360736;
+}
