@@ -1,0 +1,57 @@
+{% extendes 'includes/base.html' %}
+<!--admin page section start-->
+{% block title %}
+
+  Admin Dashboard
+
+{% endblock %}
+
+
+{% block body %}
+
+  <section class="h-100vh bg-club">
+      <div class="">
+      <ul class="navbar-nav">
+        <li class="navbar-item ml-auto">
+          <a class="nav-item text-capitalize btn btn-outline-warning admin-nav-item" href="{% url 'home' %}">back to homepage</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 mt-3">
+            <div style="min-height:100px; min-width:250px" class="bg-light btn-center-parent">
+              <form action="#">
+                <button class="btn btn-outline-dark text-capitalize btn-center" type="submit">existing memeber</button>
+              </form>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 mt-3">
+            <div style="min-height:100px; min-width:250px" class="bg-light btn-center-parent">
+              <form action="#">
+                <button class="btn btn-outline-dark text-capitalize btn-center" type="submit">event post</button>
+              </form>
+            </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 mt-3">
+          <div style="min-height:100px; min-width:250px" class="bg-light btn-center-parent">
+            <form action="#">
+                <button class="btn btn-outline-dark text-capitalize btn-center" type="submit">recruitment</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center mt-3">
+      <div class="col-12 col-lg-4">
+        <div style="min-height:100px; min-width:250px" class="bg-light btn-center-parent">
+          <form action="#">
+              <button class="btn btn-outline-dark text-capitalize btn-center" type="submit">oral exam</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--admin section end-->
+
+{% endblock %}
