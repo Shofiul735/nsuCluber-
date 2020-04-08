@@ -3,6 +3,11 @@
 {% load static %}
 
 
+{% extends 'includes/base.html'%}
+
+{% load static %}
+
+
 {% block body %}
 <nav class="navbar navbar-expand-md navbar-light">
   <a class="navbar-brand" href=""> <img class="logo" src="{% static 'images/logo.png' %}" alt="logo"> </a>
@@ -20,6 +25,9 @@
       <li class="nav-item ml-auto">
         <a class="nav-link text-capitalize" href="">recruitment</a>
       </li>
+      <li>
+      <a class="nav-link text-capitalize btn mr-1 btn-outline-success nav-btn" href="{% url 'admin' %}">Admin Dashboard</a>
+     </li>
       <li class="nav-item ml-auto">
         <a class="nav-link text-capitalize btn btn-outline-success nav-btn" href="">log in</a>
       </li>
