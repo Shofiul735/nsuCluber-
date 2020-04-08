@@ -1,0 +1,53 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+{% block title %}
+    nsuCluber
+{% endblock %}
+
+{% block body %}
+  <!-- navbar start -->
+  {% include 'includes/nav.html' %}
+  <!--navbar end-->
+<section>
+    <div class="form-control">
+    <div class="container">
+	<div class="row">
+                 <div class="col-sm-4">
+                  <div class="panel panel-primary">
+		    <div class="panel-heading top-bar">
+                    <div class="col-md-8 col-xs-8">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-book"></span> Contacts</h3>
+                    </div>
+                </div>
+		</div>
+                 </div>
+
+
+
+                 <div class="col-sm-8">
+                  <div class="chatbody">
+                  <div class="panel panel-primary">
+                <div class="panel-heading top-bar">
+                    <div class="col-md-8 col-xs-8">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat box</h3>
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat"><i class="fa fa-send fa-1x" aria-hidden="true"></i>send</button>
+                        </span>
+                    </div>
+                </div>
+    		</div>
+
+                  </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+{% endblock %}
