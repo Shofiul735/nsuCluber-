@@ -28,3 +28,12 @@ def reservation(request):
      # this is for database
     }
     return render(request,'reservation.html',context)
+
+def chatbox(request):
+    # This function is use to display chat box page of our website and retrive some some data from database
+
+    context = {
+        # this is for database
+    }
+    return render(request, 'chat-box.html', context)
+
