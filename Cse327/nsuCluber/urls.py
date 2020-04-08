@@ -1,7 +1,8 @@
-from django.urls import path,include
+ffrom django.urls import path,include
 from . import views
 
 urlpatterns = [
-    path('',views.reservation, name='home')
-
+    path('',views.index, name='home'),
+    path('admin-dash',views.adminDash,name='admin'),
+    path('reservation',views.reservation,name='reservation')
 ]
