@@ -22,7 +22,7 @@ def adminDash(request):
 
 def reservation(request):
 
-     #This function is for admin Dashboard
+     #This function is use to display reservation page of our website and retrive some some data from database
 
     context = {
      # this is for database
