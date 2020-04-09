@@ -19,3 +19,12 @@ def adminDash(request):
      # this is for database
     }
     return render(request,'includes/admin-dash.html',context)
+
+def existingMember(request):
+
+     #This function is for admin Dashboard
+
+    context = {
+     # this is for database and other data
+    }
+    return render(request,'includes/existingMember.html',context)
