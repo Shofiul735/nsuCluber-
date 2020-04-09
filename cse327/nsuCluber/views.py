@@ -21,9 +21,9 @@ def adminDash(request):
     return render(request,'includes/admin-dash.html',context)
 
 def existingMember(request):
-
-     #This function is for admin Dashboard
-
+     #This function is for existing member views
+    if request.POST:
+      memType = request.POST['select_mem']
     context = {
      # this is for database and other data
     }
