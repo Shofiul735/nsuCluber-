@@ -28,3 +28,10 @@ def existingMember(request):
      # this is for database and other data
     }
     return render(request,'includes/existingMember.html',context)
+
+def eventPost(request):
+  #This function is for event-post.html
+  context = {
+    #This dictionary for database and others data
+  }
+  return render(request,'includes/event-post.html',context)
