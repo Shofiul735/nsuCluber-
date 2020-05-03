@@ -14,3 +14,14 @@ class ExistingMember(models.Model):
     position = models.CharField(max_length = 10)
     def __str__(self):
         return self.name
+
+class EventPost(models.Model):
+    title = models.CharField(max_length = 30)
+    start = models.DateTimeField(auto_now = False, auto_now_add = False)
+    end = models.DateTimeField(auto_now = False, auto_now_add = False)
+    place = models.CharField(max_length = 20)
+    owner = models.ForeignKey(AllAdmins,on_delete = models.CASCADE)
+    eventSummary = models.CharField(max_length = 100)
+    eventDetails = models.TextField()
+    keyWord = models.CharField(max_length = 50)
+    
