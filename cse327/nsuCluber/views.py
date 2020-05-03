@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from . import forms
 # Create your views here.
 
 def index(request):
@@ -33,5 +33,6 @@ def eventPost(request):
   #This function is for event-post.html
   context = {
     #This dictionary for database and others data
+    'from':forms.EventPostModelForm
   }
   return render(request,'includes/event-post.html',context)
