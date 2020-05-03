@@ -10,36 +10,13 @@
     <div class="w-100">
         <h1 class="text-center text-white text-capitalize  cursive"> Event post </h1>
     </div>
-    <div class="container mt-4 pb-4">
+    <div class="container mt-4 pb-4 ">
         <form class="" action="." method="post">{% csrf_token %}
             <div class="form-group w-100 text-left">
-                <label class="text-light text-capitalize">Event/Seminar title</label>
-                <br>
-                <input class="form-control-sm" type="text" name="event_title" value="" required>
-                <br>
-                <label class="text-light">Start</label>
-                <br>
-                <input class="form-control-sm" type="text" placeholder="year-month-day" name="time_start" value="" required>
-                <br>
-                <label class="text-light">End</label>
-                <br>
-                <input class="form-control-sm" type="text" placeholder="year-month-day" name="time_end" value="" required>
-                <br>
-                <label class="text-light">Place</label>
-                <br>
-                <input class="form-control-sm" type="text" placeholder="Room Number" name="place" value="" required>
-                <br>
-                <label class="text-light text-capitalize">Summary of event</label>
-                <br>
-                <input class="form-control-sm" type="text" placeholder="Summary within 50 word" name="summary" value="" required>
-                <br>
-                <label class="text-light text-capitalize">Enter Keywords</label>
-                <br>
-                <input class="form-control-sm" type="text" name="keywords" value="">
-                <br>
-                <label class="text-light">Details</label>
-                <br>
-                <textarea class="form-control-sm" type="text" name="details" rows="8" cols="80" required></textarea>
+                {% for item in form %}
+                <label class="text-white">{{item.label_tag}}</label>
+                <br> {{item}}
+                <br> {% endfor %}
                 <br>
                 <button class="btn btn-outline-light" type="submit" name="event_post">Post</button>
             </div>

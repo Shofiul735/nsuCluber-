@@ -17,8 +17,8 @@ class ExistingMember(models.Model):
 
 class EventPost(models.Model):
     title = models.CharField(max_length = 30)
-    start = models.DateTimeField(auto_now = False, auto_now_add = False)
-    end = models.DateTimeField(auto_now = False, auto_now_add = False)
+    start = models.Chaend = models.CharField(max_length = 20)
+    end = models.CharField(max_length = 20)
     place = models.CharField(max_length = 20)
     owner = models.ForeignKey(AllAdmins,on_delete = models.CASCADE)
     eventSummary = models.CharField(max_length = 100)
