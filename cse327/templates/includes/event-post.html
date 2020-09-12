@@ -1,0 +1,26 @@
+{% extends 'includes/base.html' %} {% block title %} Event-post {% endblock %} {% block body%}
+<section class="h-100vh bg-club">
+    <div class="">
+        <ul class="navbar-nav">
+            <li class="navbar-item ml-auto">
+                <a class="nav-item text-capitalize btn btn-outline-warning admin-nav-item" href="{% url 'admin' %}">back to dashboard</a>
+            </li>
+        </ul>
+    </div>
+    <div class="w-100">
+        <h1 class="text-center text-white text-capitalize  cursive"> Event post </h1>
+    </div>
+    <div class="container mt-4 pb-4 ">
+        <form class="" action="." method="post">{% csrf_token %}
+            <div class="form-group w-100 text-left">
+                {% for item in form %}
+                <label class="text-white">{{item.label_tag}}</label>
+                <br> {{item}}
+                <br> {% endfor %}
+                <br>
+                <button class="btn btn-outline-light" type="submit" name="event_post">Post</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock%}

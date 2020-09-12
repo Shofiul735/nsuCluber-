@@ -1,0 +1,62 @@
+{% extends 'includes/base.html' %} {% block title %} Existing Member {% endblock %} {% block body %}
+
+
+<!--exixting_mem.html form section Start-->
+<section class="bg-light">
+    <div class="">
+        <ul class="navbar-nav">
+            <li class="navbar-item ml-auto">
+                <a class="nav-item text-capitalize btn btn-outline-dark admin-nav-item" href="{% url 'admin' %}">back to dashboard</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="">
+            <form class="form-group" action="." method="POST">{% csrf_token %}
+                <label class="text-dark" for="">Select</label>
+                <br>
+                <select class="btn" name="select_mem">
+           <option class="text-capitalize" value="all_mem">All Member</option>
+           <option class="text-capitalize" value="eb">Executive Body</option>
+           <option class="text-capitalize" value="sub-eb">Sub Executive Body</option>
+           <option class="text-capitalize" value="pm">Probationary Member</option>
+         </select>
+                <button class="btn btn-outline-success mt-1 text-uppercase text-dark d-block" type="submit">show</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!--exixting_mem.html form section end-->
+
+<!--data show section start-->
+<section>
+    <div class="container-fluid h-90vh">
+        <div class="header">
+            <h1 class="display-3 cursive text-dark text-center">Members data</h1>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-10">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Club Name</th>
+                            <th>Position</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>172364</th>
+                            <td class="text-capitalize">Akib</td>
+                            <td class="text-uppercase">nsuss</td>
+                            <td class="text-uppercase">sub-eb</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!--data show section end-->
+{% endblock %}
